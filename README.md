@@ -11,12 +11,12 @@
 ./AES_Test.exe "Your secret message here"
 ```
 
-🛠️ Build Information (For Developers)
-If you wish to compile this project manually on Windows using MinGW (g++), ensure you link the following system libraries to satisfy OpenSSL's internal requirements:
+## 🛠️ Build Information (For Developers)
+- If you wish to compile this project manually on Windows using MinGW (g++), ensure you link the following system libraries to satisfy OpenSSL's internal requirements:
 
 ```bash
 g++ main.cpp -o AES_Test.exe -lssl -lcrypto -lws2_32 -lgdi32 -lcrypt32
 ```
 
-[!IMPORTANT]
-Note on Static Linking: The use of -lws2_32 and -lcrypt32 is mandatory for Windows builds as OpenSSL's static library references these Windows API components for entropy and networking.
+## IMPORTANT
+- Note on Static Linking: The use of -lws2_32 and -lcrypt32 is mandatory for Windows builds as OpenSSL's static library references these Windows API components for entropy and networking.
