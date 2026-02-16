@@ -8,14 +8,14 @@
 
 # General Usage
 ```bash
-./AES_Test.exe "Your secret message here"
+./program.exe "Your secret message here"
 ```
 
 ## 🛠️ Build Information (For Developers)
 - If you wish to compile this project manually on Windows using MinGW (g++), ensure you link the following system libraries to satisfy OpenSSL's internal requirements:
 
 ```bash
-g++ main.cpp -o AES_Test.exe -lssl -lcrypto -lws2_32 -lgdi32 -lcrypt32
+g++ main.cpp -o program.exe -lssl -lcrypto -lws2_32 -lgdi32 -lcrypt32
 ```
 
 ## IMPORTANT
